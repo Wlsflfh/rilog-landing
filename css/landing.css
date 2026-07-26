@@ -31,11 +31,6 @@
     gap: 16px;
 }
 
-.landing-logo {
-    width: 142px;
-    height: auto;
-}
-
 .landing-eyebrow {
     color: var(--navy-700);
     font-size: 13px;
@@ -333,10 +328,6 @@
     .landing-hero {
         gap: 28px;
         padding: 38px 0 56px;
-    }
-
-    .landing-logo {
-        width: 112px;
     }
 
     .landing-hero h1 {
