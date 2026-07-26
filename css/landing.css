@@ -172,8 +172,7 @@
 
 .landing-screen-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
+    gap: 22px;
 }
 
 .landing-screen-card {
@@ -184,15 +183,18 @@
     box-shadow: var(--shadow);
 }
 
-.landing-screen-card-main {
-    grid-column: 1 / -1;
-}
-
 .landing-screen-card img {
     height: auto;
-    aspect-ratio: 2013 / 1000;
     object-fit: contain;
     background: #fff;
+}
+
+.landing-screen-image-markdown {
+    aspect-ratio: 1777 / 885;
+}
+
+.landing-screen-image-canvas {
+    aspect-ratio: 1693 / 929;
 }
 
 .landing-screen-card strong {
