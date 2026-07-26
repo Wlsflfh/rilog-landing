@@ -280,7 +280,7 @@
 
 .landing-wide-screen {
     overflow: hidden;
-    aspect-ratio: 16 / 8;
+    aspect-ratio: 1677 / 938;
     background: var(--surface-raised);
     border: 1px solid var(--border);
     border-radius: 22px;
