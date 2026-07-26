@@ -265,6 +265,19 @@
     border-radius: inherit;
 }
 
+.landing-rureo-evolution {
+    display: flex;
+    justify-content: center;
+    margin-top: -4px;
+}
+
+.landing-rureo-evolution img {
+    display: block;
+    width: min(620px, 70vw);
+    height: auto;
+    border-radius: 20px;
+}
+
 .landing-wide-screen {
     overflow: hidden;
     aspect-ratio: 16 / 8;
@@ -396,6 +409,10 @@
 
     .landing-stats-screen {
         object-position: 45% center;
+    }
+
+    .landing-rureo-evolution img {
+        width: min(100%, 460px);
     }
 
     .landing-closing {
