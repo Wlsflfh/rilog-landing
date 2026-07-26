@@ -145,7 +145,7 @@
 .landing-laptop-screen img,
 .landing-wide-screen img,
 .landing-screen-card img,
-.landing-stats-visual > img:first-child {
+.landing-stats-screen {
     display: block;
     width: 100%;
     height: 100%;
@@ -196,17 +196,19 @@
 }
 
 .landing-stats {
-    grid-template-columns: minmax(0, .8fr) minmax(260px, .48fr) minmax(0, 1.05fr);
+    grid-template-columns: minmax(320px, .72fr) minmax(0, 1.28fr);
     align-items: center;
+    gap: 42px;
 }
 
 .landing-stats .landing-section-copy {
     grid-column: 1;
 }
 
-.landing-quest-grid {
-    display: grid;
-    gap: 12px;
+.landing-secret-note {
+    margin-top: 6px;
+    color: var(--navy-700) !important;
+    font-weight: 850;
 }
 
 .landing-feature-card {
@@ -246,24 +248,43 @@
 
 .landing-stats-visual {
     position: relative;
-    min-height: 410px;
+    min-height: 470px;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(255, 255, 255, .72), rgba(255, 255, 255, .94));
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    box-shadow: var(--shadow);
 }
 
-.landing-stats-visual > img:first-child {
-    aspect-ratio: 16 / 9;
-    max-height: 380px;
+.landing-stats-screen {
+    position: absolute;
+    inset: 10% auto auto -8%;
+    width: 112%;
+    height: 74%;
+    object-fit: cover;
+    object-position: left top;
+    opacity: .8;
     border: 1px solid var(--border);
     border-radius: 18px;
-    box-shadow: var(--shadow);
 }
 
 .landing-rureo {
     position: absolute;
-    right: 5%;
-    bottom: -24px;
-    width: min(28%, 150px);
     height: auto;
     filter: drop-shadow(0 18px 26px rgba(0, 80, 140, .24));
+}
+
+.landing-rureo-main {
+    right: -2%;
+    bottom: -5%;
+    width: min(36%, 250px);
+}
+
+.landing-rureo-walker {
+    right: 36%;
+    top: 24%;
+    width: min(11%, 78px);
+    opacity: .9;
 }
 
 .landing-wide-screen {
@@ -383,7 +404,6 @@
         padding: 13px 14px 15px;
     }
 
-    .landing-quest-grid,
     .landing-org-mock {
         grid-template-columns: 1fr;
     }
@@ -393,17 +413,25 @@
     }
 
     .landing-stats-visual {
-        min-height: 280px;
+        min-height: 360px;
     }
 
-    .landing-stats-visual > img:first-child {
-        max-height: none;
+    .landing-stats-screen {
+        inset: 14% auto auto -28%;
+        width: 152%;
+        height: 68%;
     }
 
-    .landing-rureo {
-        right: 16px;
-        bottom: -16px;
-        width: min(34%, 110px);
+    .landing-rureo-main {
+        right: -8px;
+        bottom: -18px;
+        width: min(42%, 142px);
+    }
+
+    .landing-rureo-walker {
+        right: 48%;
+        top: 30%;
+        width: min(15%, 58px);
     }
 
     .landing-closing {
