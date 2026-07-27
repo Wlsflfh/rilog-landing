@@ -263,6 +263,10 @@
     aspect-ratio: 1693 / 929;
 }
 
+.landing-screen-image-memo {
+    aspect-ratio: 1793 / 877;
+}
+
 .landing-stats {
     grid-template-columns: minmax(380px, .9fr) minmax(0, 1.1fr);
     align-items: center;
