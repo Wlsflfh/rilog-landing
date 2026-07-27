@@ -90,7 +90,7 @@
     transition: background var(--transition), color var(--transition), border-color var(--transition), transform var(--transition);
 }
 
-.landing-section-nav .nav-link:first-child {
+.landing-section-nav .nav-link.is-active {
     color: white;
     background: var(--navy-950);
     box-shadow: 0 8px 18px rgba(7, 16, 71, .14);
@@ -103,7 +103,7 @@
     transform: translateY(-1px);
 }
 
-.landing-section-nav .nav-link:first-child:hover {
+.landing-section-nav .nav-link.is-active:hover {
     color: white;
     background: var(--navy-900);
 }
@@ -190,6 +190,7 @@
     gap: 28px;
     padding: 86px 0;
     border-top: 1px solid var(--border);
+    scroll-margin-top: 96px;
 }
 
 .landing-section-copy {
