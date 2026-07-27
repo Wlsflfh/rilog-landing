@@ -89,14 +89,14 @@ a {
 .header-inner {
     display: flex;
     align-items: center;
-    min-height: 72px;
-    gap: 30px;
+    min-height: 80px;
+    gap: 34px;
 }
 
 .brand {
     flex: 0 0 auto;
     color: var(--navy-950);
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 900;
     letter-spacing: 0;
 }
@@ -112,10 +112,10 @@ a {
 }
 
 .nav-link {
-    padding: 9px 12px;
+    padding: 10px 14px;
     color: var(--text-secondary);
     border-radius: 11px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
 }
 
@@ -185,7 +185,7 @@ a {
     }
 
     .header-inner {
-        min-height: 64px;
+        min-height: 68px;
         gap: 12px;
     }
 

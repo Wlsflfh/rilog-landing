@@ -85,12 +85,12 @@
 }
 
 .landing-section-nav .nav-link {
-    min-height: 38px;
-    padding: 8px 13px;
+    min-height: 42px;
+    padding: 9px 16px;
     background: var(--surface);
     border: 1px solid transparent;
     border-radius: 999px;
-    font-size: 13px;
+    font-size: 14px;
     transition: background var(--transition), color var(--transition), border-color var(--transition), transform var(--transition);
 }
 
