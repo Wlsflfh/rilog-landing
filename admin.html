@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#071047">
+    <meta name="description" content="Rilog. 사전 신청 관리자">
+    <title>Rilog. — 사전 신청 관리자</title>
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="stylesheet" href="/css/landing-base.css">
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body class="admin-body">
+<a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+<header class="app-header">
+    <div class="header-inner">
+        <a class="brand" href="/landing.html" aria-label="Rilog 소개">Rilog<span>.</span></a>
+        <nav class="primary-nav" aria-label="관리자 내비게이션">
+            <a class="nav-link" href="/landing.html">소개 페이지</a>
+        </nav>
+    </div>
+</header>
+
+<main class="admin-main" id="main-content" tabindex="-1">
+    <section class="admin-hero">
+        <span class="admin-eyebrow">Waitlist Admin</span>
+        <h1>사전 신청 명단</h1>
+        <p>신청자 수와 이메일 목록을 확인합니다.</p>
+    </section>
+
+    <section class="admin-card">
+        <form class="admin-login" data-admin-form>
+            <label for="admin-password">관리자 비밀번호</label>
+            <div class="admin-login-row">
+                <input id="admin-password" name="password" type="password" autocomplete="current-password" placeholder="비밀번호 입력" required>
+                <button class="button button-primary" type="submit">명단 보기</button>
+            </div>
+        </form>
+        <p class="admin-message" data-admin-message role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="admin-summary" data-admin-content hidden>
+        <article class="admin-count-card">
+            <span>총 신청자</span>
+            <strong data-admin-count>0</strong>
+        </article>
+        <article class="admin-table-card">
+            <div class="admin-table-heading">
+                <h2>신청 이메일</h2>
+                <button class="button button-secondary" type="button" data-admin-refresh>새로고침</button>
+            </div>
+            <div class="admin-table-wrap">
+                <table>
+                    <thead>
+                    <tr>
+                        <th scope="col">이메일</th>
+                        <th scope="col">신청 시각</th>
+                    </tr>
+                    </thead>
+                    <tbody data-admin-rows></tbody>
+                </table>
+            </div>
+        </article>
+    </section>
+</main>
+
+<script src="/js/admin.js"></script>
+</body>
+</html>

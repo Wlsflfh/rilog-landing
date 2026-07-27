@@ -134,3 +134,46 @@ if (lightboxImages.length) {
         }
     });
 }
+
+const waitlistForm = document.querySelector("[data-waitlist-form]");
+const waitlistMessage = document.querySelector("[data-waitlist-message]");
+
+if (waitlistForm && waitlistMessage) {
+    const setWaitlistMessage = (message, tone = "neutral") => {
+        waitlistMessage.textContent = message;
+        waitlistMessage.dataset.tone = tone;
+    };
+
+    waitlistForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const submitButton = waitlistForm.querySelector("button[type='submit']");
+        const formData = new FormData(waitlistForm);
+        const email = String(formData.get("email") || "").trim();
+
+        submitButton.disabled = true;
+        setWaitlistMessage("사전 신청을 등록하는 중이에요.");
+
+        try {
+            const response = await fetch("/api/waitlist", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ email })
+            });
+            const payload = await response.json();
+
+            if (!response.ok) {
+                throw new Error(payload.message || "사전 신청을 등록하지 못했어요.");
+            }
+
+            setWaitlistMessage(payload.message, payload.alreadyApplied ? "neutral" : "success");
+            waitlistForm.reset();
+        } catch (error) {
+            setWaitlistMessage(error.message, "error");
+        } finally {
+            submitButton.disabled = false;
+        }
+    });
+}

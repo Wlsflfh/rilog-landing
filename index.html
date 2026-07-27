@@ -20,6 +20,7 @@
             <a class="nav-link" href="#landing-stats">통계</a>
             <a class="nav-link" href="#landing-feed">카테고리</a>
             <a class="nav-link" href="#landing-org">팀 블로그</a>
+            <a class="nav-link nav-link-cta" href="#landing-waitlist">사전신청하기</a>
         </nav>
     </div>
 </header>
@@ -110,9 +111,17 @@
         </div>
     </section>
 
-    <section class="landing-closing">
+    <section class="landing-closing landing-waitlist" id="landing-waitlist">
         <h2>Rilog는 기록을 남기는 도구에서 끝나지 않습니다.</h2>
         <p>잘 쓰게 만들고, 다시 보게 만들고, 함께 키워가게 만드는 기록 플랫폼입니다.</p>
+        <form class="waitlist-card" data-waitlist-form>
+            <label for="waitlist-email">Rilog 사전 신청</label>
+            <div class="waitlist-row">
+                <input id="waitlist-email" name="email" type="email" autocomplete="email" placeholder="이메일을 입력하세요" required>
+                <button class="button button-primary waitlist-submit" type="submit">사전 신청하기</button>
+            </div>
+            <p class="waitlist-message" data-waitlist-message role="status" aria-live="polite"></p>
+        </form>
     </section>
 </main>
 
