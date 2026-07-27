@@ -44,8 +44,10 @@
 .landing-closing h2 {
     margin: 0;
     color: var(--navy-950);
-    line-height: 1.05;
+    line-height: 1.12;
     letter-spacing: 0;
+    overflow-wrap: break-word;
+    word-break: keep-all;
 }
 
 .landing-hero h1 {
@@ -68,6 +70,8 @@
     color: var(--text-secondary);
     font-size: 18px;
     line-height: 1.75;
+    overflow-wrap: break-word;
+    word-break: keep-all;
 }
 
 .landing-hero p strong {
@@ -106,13 +110,6 @@
 .landing-section-nav .nav-link.is-active:hover {
     color: white;
     background: var(--navy-900);
-}
-
-.landing-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 12px;
 }
 
 .landing-laptop {
@@ -201,7 +198,7 @@
 
 .landing-section h2,
 .landing-closing h2 {
-    font-size: clamp(34px, 5vw, 62px);
+    font-size: clamp(34px, 4.6vw, 56px);
 }
 
 .landing-screen-grid {
@@ -252,7 +249,7 @@
 }
 
 .landing-stats {
-    grid-template-columns: minmax(320px, .72fr) minmax(0, 1.28fr);
+    grid-template-columns: minmax(380px, .9fr) minmax(0, 1.1fr);
     align-items: center;
     gap: 42px;
 }
@@ -443,14 +440,6 @@
     .landing-closing p {
         font-size: 16px;
         line-height: 1.65;
-    }
-
-    .landing-actions {
-        width: 100%;
-    }
-
-    .landing-actions .button {
-        flex: 1 1 180px;
     }
 
     .landing-section-nav {
