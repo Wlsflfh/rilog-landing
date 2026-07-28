@@ -67,8 +67,9 @@
 .landing-section-copy p,
 .landing-closing p {
     margin: 0;
-    color: var(--text-secondary);
+    color: var(--text);
     font-size: 18px;
+    font-weight: 800;
     line-height: 1.75;
     overflow-wrap: break-word;
     word-break: keep-all;
@@ -243,9 +244,9 @@
 
 .landing-screen-card-copy p {
     max-width: 920px;
-    color: var(--text-secondary);
+    color: var(--text);
     font-size: 18px;
-    font-weight: 650;
+    font-weight: 800;
     line-height: 1.55;
 }
 
@@ -296,7 +297,8 @@
 
 .landing-feature-card p {
     margin: 0;
-    color: var(--text-secondary);
+    color: var(--text);
+    font-weight: 800;
 }
 
 .landing-bullet-list {
@@ -304,8 +306,9 @@
     gap: 5px;
     margin: 14px 0 0;
     padding-left: 18px;
-    color: var(--text-secondary);
+    color: var(--text);
     font-size: 14px;
+    font-weight: 800;
 }
 
 .landing-bullet-list li::marker {
@@ -358,9 +361,9 @@
 
 .landing-rureo-evolution-copy p {
     margin: 0;
-    color: var(--text-secondary);
+    color: var(--text);
     font-size: 18px;
-    font-weight: 650;
+    font-weight: 800;
     line-height: 1.55;
 }
 
@@ -458,7 +461,8 @@
 }
 
 .waitlist-row input::placeholder {
-    color: var(--text-tertiary);
+    color: var(--text);
+    font-weight: 800;
 }
 
 .waitlist-submit {
@@ -477,9 +481,9 @@
 .waitlist-message {
     min-height: 26px;
     margin: 0;
-    color: var(--text-secondary);
+    color: var(--text);
     font-size: 15px;
-    font-weight: 750;
+    font-weight: 800;
 }
 
 .waitlist-message[data-tone="success"] {

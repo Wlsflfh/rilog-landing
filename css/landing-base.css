@@ -113,10 +113,10 @@ a {
 
 .nav-link {
     padding: 10px 14px;
-    color: var(--text-secondary);
+    color: var(--text);
     border-radius: 11px;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .nav-link:hover,
@@ -156,7 +156,7 @@ a {
 }
 
 .button-secondary {
-    color: var(--text-secondary);
+    color: var(--text);
     background: var(--surface);
 }
 
@@ -169,8 +169,9 @@ a {
     align-items: center;
     justify-content: space-between;
     min-height: 92px;
-    color: var(--text-tertiary);
+    color: var(--text);
     font-size: 13px;
+    font-weight: 800;
 }
 
 .footer-inner strong {
